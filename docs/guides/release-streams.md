@@ -18,6 +18,8 @@ Aurora provides three main release streams with different characteristics:
 | **Application Updates** | Twice a day | Twice a day  | Twice a day             |
 | **Kernel**              | Gated       | Gated        | Not-gated               |
 
+The major difference between latest and stable is the kernel cadence and when they do a major upgrade. latest will upgrade to the next major Fedora release as soon as it is available and builds daily. stable will upgrade when CoreOS does its userspace upgrade, which is usually a few weeks afterwards, and builds weekly or daily. Users can choose the stable-daily image for daily stable updates, or stick to stable for weekly builds.
+
 ## Available Streams
 
 ### Stable
