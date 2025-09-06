@@ -13,13 +13,10 @@ Aurora provides two main release streams with different characteristics:
 
 | Feature | Stable | Stable-Daily | Latest |
 |---------|--------|--------------|--------|
-| **Release Frequency** | Weekly | Daily | As available |
-| **Kernel** | Gated kernel | Gated kernel | Latest kernel |
-| **Stability** | High - thoroughly tested | High - thoroughly tested | Moderate - cutting edge |
-| **Target Audience** | Production users, daily drivers | Users wanting daily updates with stability | Enthusiasts, testers |
-| **Update Risk** | Low | Low | Higher |
-| **Feature Availability** | Stable features | Stable features | Latest features |
-| **Recommended For** | Most users | Users wanting frequent stable updates | Early adopters |
+| **Target Users** | Production users, daily drivers | Users wanting daily updates with stability | Enthusiasts, testers |
+| **System Updates Frequency** | Weekly | Daily | As available |
+| **Application Updates Frequency** | Weekly | Daily | As available |
+| **Kernel** | Gated | Gated | Not-gated |
 
 ## Available Streams
 
