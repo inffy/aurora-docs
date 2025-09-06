@@ -41,20 +41,6 @@ The **latest** stream provides:
 - `ghcr.io/ublue-os/aurora:latest`
 - `ghcr.io/ublue-os/aurora-dx:latest`
 
-### LTS (Long Term Support)
-
-The **LTS** stream offers:
-
-- **Extended Support**: 3-5 year support lifecycle
-- **Maximum Stability**: Based on CentOS Stream 10
-- **Enterprise Ready**: Designed for enterprise deployments
-- **Minimal Changes**: Focus on security updates rather than feature updates
-- **ARM Support**: First Aurora edition to officially support ARM64
-
-**Image Tags**: `lts`
-
-For detailed information about Aurora LTS, see the [Aurora Helium LTS documentation](../lts/introduction.md).
-
 ## Choosing the Right Stream
 
 ### Use **Stable** if you want:
@@ -68,12 +54,6 @@ For detailed information about Aurora LTS, see the [Aurora Helium LTS documentat
 - To help test upcoming changes
 - Are comfortable with occasional issues
 
-### Use **LTS** if you want:
-- Maximum stability for enterprise use
-- Minimal system changes over time
-- Long-term support without frequent upgrades
-- ARM64 support
-
 ## Switching Between Streams
 
 You can switch between streams using the `bootc switch` command:
@@ -86,11 +66,6 @@ sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:stable
 ### To Latest Stream
 ```bash
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:latest
-```
-
-### To LTS Stream
-```bash
-sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:lts
 ```
 
 ### Hardware-Specific Images
@@ -112,11 +87,6 @@ Replace `aurora` with your specific image variant:
 - More frequent updates as changes become available
 - May include beta or release candidate packages
 
-### LTS Stream
-- Focused primarily on security updates
-- Minimal feature changes during the support lifecycle
-- Updates follow CentOS Stream 10 maintenance schedule
-
 ## Checking Your Current Stream
 
 To see which stream you're currently using:
@@ -131,7 +101,6 @@ Look for the container image URL in the output to identify your current stream.
 
 - **New Users**: Start with the **stable** stream
 - **Developers**: Consider **stable** for reliability or **latest** for newest tools
-- **Enterprise**: Use **LTS** for production deployments
 - **Enthusiasts**: Try **latest** for cutting-edge features
 
 Remember that you can always switch between streams if your needs change!
