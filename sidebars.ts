@@ -67,6 +67,7 @@ const sidebars: SidebarsConfig = {
       label: "Project Information",
       collapsed: false,
       items: [
+        "project-docs/aurora-vs-bazzite",
         "project-docs/credits",
         "project-docs/press-kit",
         "project-docs/coc",

@@ -48,6 +48,8 @@ View the [Steam Flatpak Github Wiki](https://github.com/flathub/com.valvesoftwar
 
 [Bazzite](https://bazzite.gg) is the better choice if your gaming needs rank higher over productivity, development, or general computing usage.
 
+> **Learn More**: For a comprehensive comparison between Aurora and Bazzite, including their different focus areas, features, and use cases, see our [Aurora vs Bazzite](/project-docs/aurora-vs-bazzite) guide.
+
 **Note**: Make sure you are not rebasing to a GNOME image of Bazzite as rebasing to a different Desktop Environment is not supported.
 
 [Pick the correct Bazzite image](https://bazzite.gg/#image-picker) and insert it in the bootc command below, you don't have to download any ISOs or reinstall for this:
