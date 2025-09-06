@@ -11,12 +11,12 @@ Aurora offers different release streams to meet various user needs and preferenc
 
 Aurora provides two main release streams with different characteristics:
 
-| Feature | Stable | Stable-Daily | Latest |
-|---------|--------|--------------|--------|
-| **Target Users** | Production | Enthusiasts | Advanced users, testers |
-| **System Updates Frequency** | Weekly | Daily | As available |
-| **Application Updates Frequency** | Twice a day | Twice a day | Twice a day |
-| **Kernel** | Gated | Gated | Not-gated |
+| Feature                           | Stable      | Stable-Daily | Latest                  |
+| --------------------------------- | ----------- | ------------ | ----------------------- |
+| **Target Users**                  | Production  | Enthusiasts  | Advanced users, testers |
+| **System Updates Frequency**      | Weekly      | Daily        | As available            |
+| **Application Updates Frequency** | Twice a day | Twice a day  | Twice a day             |
+| **Kernel**                        | Gated       | Gated        | Not-gated               |
 
 ## Available Streams
 
@@ -33,6 +33,7 @@ The **stable** stream is the recommended choice for most users. It provides:
 **Image Tags**: `stable`
 
 **Examples**:
+
 - `ghcr.io/ublue-os/aurora:stable`
 - `ghcr.io/ublue-os/aurora-dx:stable`
 - `ghcr.io/ublue-os/aurora-nvidia:stable`
@@ -50,6 +51,7 @@ The **stable-daily** stream provides:
 **Image Tags**: `stable-daily`
 
 **Examples**:
+
 - `ghcr.io/ublue-os/aurora:stable-daily`
 - `ghcr.io/ublue-os/aurora-dx:stable-daily`
 - `ghcr.io/ublue-os/aurora-nvidia:stable-daily`
@@ -68,24 +70,28 @@ The **latest** stream provides:
 **Image Tags**: `latest`
 
 **Examples**:
+
 - `ghcr.io/ublue-os/aurora:latest`
 - `ghcr.io/ublue-os/aurora-dx:latest`
 
 ## Choosing the Right Stream
 
 ### Use **Stable** if you want:
+
 - A reliable daily driver
 - Weekly updates without cutting-edge instability
 - The best balance of features and stability
 - **Recommended for most users**
 
 ### Use **Stable-Daily** if you want:
+
 - The same stability as stable
 - Daily updates instead of weekly
 - Gated kernel reliability with more frequent updates
 - **Good for users who want stable but more current**
 
 ### Use **Latest** if you want:
+
 - The newest features immediately
 - Latest kernel and packages
 - To help test upcoming changes
@@ -96,16 +102,19 @@ The **latest** stream provides:
 You can switch between streams using the `bootc switch` command:
 
 ### To Stable Stream
+
 ```bash
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:stable
 ```
 
 ### To Stable-Daily Stream
+
 ```bash
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:stable-daily
 ```
 
 ### To Latest Stream
+
 ```bash
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:latest
 ```
@@ -113,6 +122,7 @@ sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:latest
 ### Hardware-Specific Images
 
 Replace `aurora` with your specific image variant:
+
 - `aurora-dx` for Developer Experience variant
 - `aurora-nvidia` for NVIDIA proprietary driver support
 - `aurora-nvidia-open` for NVIDIA open driver support
@@ -120,18 +130,21 @@ Replace `aurora` with your specific image variant:
 ## Update Frequency and Throttling
 
 ### Stable Stream
+
 - Updates are released after thorough testing
 - Weekly release cadence
 - Uses gated kernel for enhanced stability
 - Updates include both system packages and container updates
 
 ### Stable-Daily Stream
+
 - Daily builds of the stable stream
 - Same gated kernel and testing as stable
 - More frequent updates for users who want the latest stable changes
 - Updates include both system packages and container updates
 
 ### Latest Stream
+
 - Updates follow Fedora's release schedule closely
 - More frequent updates as changes become available
 - Uses latest available kernel
