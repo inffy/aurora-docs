@@ -11,12 +11,12 @@ Aurora offers different release streams to meet various user needs and preferenc
 
 Aurora provides three main release streams with different characteristics:
 
-| Feature                           | Stable      | Stable-Daily | Latest                  |
-| --------------------------------- | ----------- | ------------ | ----------------------- |
-| **Target Users**                  | Production  | Enthusiasts  | Advanced users, testers |
+| Feature                 | Stable      | Stable-Daily | Latest                  |
+| ----------------------- | ----------- | ------------ | ----------------------- |
+| **Target Users**        | Production  | Enthusiasts  | Advanced users, testers |
 | **System Updates**      | Weekly      | Daily        | As available            |
 | **Application Updates** | Twice a day | Twice a day  | Twice a day             |
-| **Kernel**                        | Gated       | Gated        | Not-gated               |
+| **Kernel**              | Gated       | Gated        | Not-gated               |
 
 ## Available Streams
 
