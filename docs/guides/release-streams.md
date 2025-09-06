@@ -107,7 +107,22 @@ The **latest** stream provides:
 
 ## Switching Between Streams
 
-You can switch between streams using the `bootc switch` command:
+You can switch between streams using either the `rebase-helper` tool or the `bootc switch` command:
+
+### Using the Rebase Helper Tool (Recommended)
+
+The easiest way to switch between streams is using Aurora's built-in rebase helper:
+
+```bash
+ujust rebase-helper
+```
+
+This interactive tool will guide you through:
+- Switching between different Aurora streams (stable, stable-daily, latest)
+- Moving between hardware-specific images (aurora, aurora-dx, aurora-nvidia, etc.)
+- Selecting the appropriate image for your system
+
+### Using Bootc Switch Commands
 
 ### To Stable Stream
 
