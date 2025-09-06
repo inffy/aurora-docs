@@ -20,6 +20,12 @@ Aurora provides three main release streams with different characteristics:
 
 The major difference between latest and stable is the kernel cadence and when they do a major upgrade. latest will upgrade to the next major Fedora release as soon as it is available and builds daily. stable will upgrade when CoreOS does its userspace upgrade, which is usually a few weeks afterwards, and builds weekly or daily. Users can choose the stable-daily image for daily stable updates, or stick to stable for weekly builds.
 
+Gated Kernel
+
+The stable tag feature a gated kernel. This kernel follows the same version as the [Fedora CoreOS stable stream](https://fedoraproject.org/coreos/release-notes?arch=x86_64&stream=stable), which is a slower cadence than default Fedora Kinoite. The Universal Blue team may temporarily pin to a specific kernel in order to avoid regressions that may affect users.
+
+Adding and editing kernel boot arguments is currently handled by rpm-ostree, check the [upstream documentation](https://docs.fedoraproject.org/en-US/fedora-coreos/kernel-args/#_modifying_kernel_arguments_on_existing_systems) for more information.
+
 ## Available Streams
 
 ### Stable
