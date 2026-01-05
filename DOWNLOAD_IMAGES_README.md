@@ -1,8 +1,23 @@
 # Downloading User-Attachment Images
 
+## ⚠️ ACTION REQUIRED
+
+This PR has converted all GitHub user-attachment URLs to local references, but **9 images still need to be downloaded** due to network restrictions in the sandboxed build environment.
+
+**Why can't the images be downloaded automatically?**
+- The GitHub user-attachments CDN (github-production-user-asset-6210df.s3.amazonaws.com) is blocked in the Copilot sandboxed environment
+- Images must be downloaded from a machine with internet access
+- Scripts are provided below to automate this process
+
+**Quick Start:**
+```bash
+# From a machine with internet access, run:
+./download-images.sh
+```
+
 ## Overview
 
-This repository has been updated to use local copies of GitHub user-attachment images instead of linking directly to GitHub's CDN. Some images need to be downloaded manually due to network restrictions in the build environment.
+This repository has been updated to use local copies of GitHub user-attachment images instead of linking directly to GitHub's CDN. The markdown files have been updated to reference local paths, but the actual image files need to be downloaded.
 
 ## Images Already Available
 
@@ -27,36 +42,30 @@ The following 9 images need to be downloaded and placed in `static/img/user-atta
 
 ## How to Download
 
-### Option 1: Using the Download Script (Automated)
+### Option 1: Using Bash Script (Recommended)
 
-Run the included Node.js download script from an environment with internet access:
+Run the bash script from a machine with internet access:
+
+```bash
+chmod +x download-images.sh
+./download-images.sh
+```
+
+This script will:
+- Download all 9 missing images from GitHub
+- Save them to `static/img/user-attachments/`
+- Skip images that already exist (3 images are already in place)
+- Report success/failure for each image
+
+### Option 2: Using Node.js Script
+
+Run the Node.js download script:
 
 ```bash
 node download-user-attachments.js
 ```
 
-This script will:
-- Download all missing images from GitHub
-- Save them to `static/img/user-attachments/`
-- Skip images that already exist
-- Report any failures
-
-### Option 2: Manual Download
-
-If the script fails, you can download the images manually:
-
-1. Open each URL in a browser:
-   - `https://github.com/user-attachments/assets/682057ec-e435-4fe7-aca5-928ee1a7063f`
-   - `https://github.com/user-attachments/assets/af508f58-e696-4eba-956b-ad3dea19d315`
-   - (etc. for each UUID above)
-
-2. Right-click and save each image
-
-3. Rename the downloaded files to match the UUID with `.png` extension (or `.jpeg` for the last one)
-
-4. Place all downloaded images in: `static/img/user-attachments/`
-
-### Option 3: Using curl/wget
+### Option 3: Using curl (Manual)
 
 ```bash
 cd static/img/user-attachments/
@@ -71,6 +80,21 @@ curl -L "https://github.com/user-attachments/assets/3d93c1f3-eb12-44c5-bd0f-08fe
 curl -L "https://github.com/user-attachments/assets/611291de-4cea-4b20-8050-8f0dcc5b2109" -o "611291de-4cea-4b20-8050-8f0dcc5b2109.png"
 curl -L "https://github.com/user-attachments/assets/f36f5e8e-2b5d-4ef1-bb97-97da0d62e185" -o "f36f5e8e-2b5d-4ef1-bb97-97da0d62e185.png"
 ```
+
+### Option 4: Manual Browser Download
+
+If automated downloads fail, manually download each image:
+
+1. Open each URL in a browser:
+   - `https://github.com/user-attachments/assets/682057ec-e435-4fe7-aca5-928ee1a7063f`
+   - `https://github.com/user-attachments/assets/af508f58-e696-4eba-956b-ad3dea19d315`
+   - (etc. - see list above in "Images That Need to Be Downloaded")
+
+2. Right-click and save each image
+
+3. Rename the downloaded files to: `{uuid}.png` (e.g., `682057ec-e435-4fe7-aca5-928ee1a7063f.png`)
+
+4. Place all downloaded images in: `static/img/user-attachments/`
 
 ## Verification
 
