@@ -40,7 +40,7 @@ The most current [Docker Engine](https://docs.docker.com/engine/) is included by
 
 ## Podman and Podman Desktop
 
-![Podman Desktop](https://github.com/user-attachments/assets/69f64ed1-7fcc-4040-9a3d-12b71308da1b)
+![Podman Desktop](/img/user-attachments/69f64ed1-7fcc-4040-9a3d-12b71308da1b.png)
 
 [Podman Desktop](https://podman-desktop.io/) is included to provide container management. Check out the Podman Desktop [documentation](https://podman-desktop.io/docs/intro) for more information. All the upstream `podman` tools are included. This is the default system container runtime and is the recommended developer configuration that Fedora ships with.
 
@@ -90,11 +90,11 @@ Pet containers are available as interactive terminals via [distrobox](https://di
 
 Use DistroShelf's interface to create your own pet containers from whichever distribution is on the list:
 
-![image](https://github.com/user-attachments/assets/2daf276d-2aed-47b9-9792-923d674ef226)
+![image](/img/user-attachments/2daf276d-2aed-47b9-9792-923d674ef226.png)
 
 For CLI warriors you can manage your containers with the Terminal's built-in container support:
 
-![image](https://github.com/user-attachments/assets/2a4dc4b5-f1a8-4781-80a4-92ea4dfeeb97)
+![image](/img/user-attachments/2a4dc4b5-f1a8-4781-80a4-92ea4dfeeb97.png)
 
 The included [Terminal](https://gitlab.gnome.org/chergert/ptyxis) includes a host terminal so that you can quickly switch between containers and the host.
 

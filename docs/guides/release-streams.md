@@ -113,7 +113,7 @@ The easiest way to switch between streams is using Aurora's built-in rebase help
 ujust rebase-helper
 ```
 
-<img width="416" height="229" alt="image" src="https://github.com/user-attachments/assets/682057ec-e435-4fe7-aca5-928ee1a7063f" />
+<img width="416" height="229" alt="image" src="/img/user-attachments/682057ec-e435-4fe7-aca5-928ee1a7063f.png" />
 
 This interactive tool will guide you through:
 
