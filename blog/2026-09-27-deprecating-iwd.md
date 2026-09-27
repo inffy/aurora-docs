@@ -18,12 +18,14 @@ Then we have some news about IWD Wi-fi backend that some of you might be using.
 ## Fedora 45 Beta testing
 
 We recommend you pin your current deployment before rebasing:
-``` bash
+
+```bash
 sudo ostree admin pin 0
 ```
 
 Then you can rebase to the `testing` branch for example:
-``` bash
+
+```bash
 sudo bootc switch --enforce-container-sigpolicy ghcr.io/ublue-os/aurora:testing
 ```
 
@@ -34,8 +36,6 @@ Aurora has had support for Intels IWD backend as an optional feature. On some ha
 Intel has stopped the official development of IWD and there hasn't been any other developer that would have picked up the project. This means that there will be no updates for IWD going forward.
 
 As said, this hasn't ever been officially the default mode, so the following is for users that have manually enabled iwd as their wireless backend.
-
-
 
 ### Background
 
